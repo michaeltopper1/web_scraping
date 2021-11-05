@@ -57,4 +57,5 @@ for (i in 1:length(student_names)) {
 
 save(final_data, file = "econ_ucsb/grad_emails.Rda")
 
+remDr$close()
 
