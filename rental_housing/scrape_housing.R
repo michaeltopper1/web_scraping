@@ -54,6 +54,9 @@ link <- read_html("https://santabarbara.craigslist.org/search/two-bedroom-apartm
 listings <- bind_cols(date, price, description, link) %>% 
   arrange(desc(date_posted))
 
+listings %>% 
+  pull(link)
+
 test_row <- listings %>% 
   slice(1)
 
