@@ -3,3 +3,4 @@
 .Rdata
 .httr-oauth
 .DS_Store
+/rental_housing/client_email.json
