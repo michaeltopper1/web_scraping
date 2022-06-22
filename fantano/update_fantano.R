@@ -182,6 +182,7 @@ info_link_info <- albums_new %>%
 fantano_final_initial <- read_csv("fantano/final_fantano.csv")
 
 info_link_info %>% 
+  bind_cols(albums_new) %>% 
   mutate(critic_score = as.double(critic_score)) %>% 
   bind_rows(fantano_final_initial) %>% 
   write_csv("fantano/final_fantano.csv")
