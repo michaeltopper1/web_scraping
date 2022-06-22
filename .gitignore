@@ -5,3 +5,4 @@
 .DS_Store
 /rental_housing/client_email.json
 /rental_housing/scrape_housing.R
+/rental_housing/*
